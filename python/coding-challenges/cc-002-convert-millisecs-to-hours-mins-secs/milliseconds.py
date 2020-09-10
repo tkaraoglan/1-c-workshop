@@ -7,7 +7,6 @@ def main():
         
         milis = int(milis)
         second = int(milis / 1000)
-        second2 = int(milis%60)
         minutes = int(second/ 60)
         minutes2 = int(second%60)
         hour = int(minutes / 60)
@@ -19,11 +18,11 @@ def main():
             print(f'just {milis} milliseconds')
             
         elif minutes < 1:
-            print(f'{second2} second/s')
+            print(f'{second} second/s')
             
         elif hour < 1 :
             if second > 1:
-                print(f'{minutes2} minute/s {second2} second/s')
+                print(f'{minutes2} minute/s {second} second/s')
                 
             else:
                 print(f'{minutes2} minute/s')
@@ -31,31 +30,18 @@ def main():
         elif day < 1 :
             if minutes > 1:
                 if second > 1:
-                    print(f"{hour2} hour/s {minutes2} minute/s {second2} second/s")
+                    print(f"{hour2} hour/s {minutes2} minute/s {second} second/s")
                     
                 else:
                     print(f"{hour2} hour/s {minutes2} minute/s")
                     
             else:
                 if second > 1:
-                    print(f"{hour2} hour/s {second2} second/s")
+                    print(f"{hour2} hour/s {second} second/s")
                     
                 else:
                     print(f"{hour2} hour/s")
-        elif day > 1 :
-            if hour > 1:
-                if second > 1:
-                    print(f"{day2} day/s {hour2} hour/s {minutes2} minute/s {second2} second/s")
-                    
-                else:
-                    print(f"{day2} day/s {hour2} hour/s {minutes2} minute/s")
-                    
-            else:
-                if second > 1:
-                    print(f"{day2} day/s {hour2} hour/s {second2} second/s")
-                    
-                else:
-                    print(f"{day2} day/s{hour2} hour/s")
+
         
     else:
         print("Not Valid Entry")
