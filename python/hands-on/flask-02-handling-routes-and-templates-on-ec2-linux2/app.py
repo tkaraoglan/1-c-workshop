@@ -64,7 +64,8 @@ def list100():
 def evens():
     return render_template('evens.html')    
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=80)
+   #app.run(debug=True)
 
 
 # Create a function named greet_admin which redirect the request to the hello path with param of 'Master Admin!!!!' 
