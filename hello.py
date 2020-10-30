@@ -1,3 +1,5 @@
 print("hello")
 print("ikinci deneme")
 print("uuuuu deneme")
+print("ikinci deneme")
+print("uueeeeuuu deneme")
