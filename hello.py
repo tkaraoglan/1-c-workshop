@@ -8,3 +8,4 @@ print("ikinci deneme")
 print("uuuuu deneme")
 print("ikinci deneme")
 print('tt')
+/github-webhook/
